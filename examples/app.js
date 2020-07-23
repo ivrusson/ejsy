@@ -19,46 +19,12 @@
   }
 
   function renderForm() {
-    TE.render('#formContainer', 'components/form', { now: new Date() }, function() {
-      $('.form')
-      .form({
-        on: 'blur',
-        fields: {
-          empty: {
-            identifier  : 'empty',
-            rules: [
-              {
-                type   : 'empty',
-                prompt : 'Please enter a value'
-              }
-            ]
-          },
-          dropdown: {
-            identifier  : 'dropdown',
-            rules: [
-              {
-                type   : 'empty',
-                prompt : 'Please select a dropdown value'
-              }
-            ]
-          },
-          checkbox: {
-            identifier  : 'checkbox',
-            rules: [
-              {
-                type   : 'checked',
-                prompt : 'Please check the checkbox'
-              }
-            ]
-          }
-        }
-      });
-    })
+    TE.render('#formContainer', 'components/form', { now: new Date() }, 'components/form')
     .then(function() {
-      console.log('APP successfully rendered!');
+      console.log('Form successfully rendered!');
     })
     .catch(function(err) {
-      console.error('APP fails to render!');
+      console.error('Form fails to render!');
     });
   }
 
