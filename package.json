@@ -1,0 +1,12 @@
+{
+  "name": "ejsy",
+  "version": "1.0.0",
+  "description": "EJS & jQuery Component Mini Framework",
+  "main": "index.js",
+  "repository": "https://github.com/ivrusson/ejsy",
+  "author": "ivrusson <ivrusson@gmail.com>",
+  "license": "GNU General Public License v2",
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
