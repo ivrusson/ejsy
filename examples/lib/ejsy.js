@@ -1,3 +1,9 @@
+/*
+  * EJSy Mini Framework
+  * version: 1.0.0
+  * author: ivrusson
+*/
+
 function ejsy(options) {
   this.options = options ? options : {};
 }
